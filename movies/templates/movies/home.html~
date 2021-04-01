@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load custom_filter %}
+
+{% block content %}
+<div class="container">
+
+  <h1 class='text-center'> Test custom template filter </h1>
+  
+  <div class="row">
+    <div class="col-sm-8 offset-sm-2">
+    
+      <p> Joe biden has  {{num_followers|human_format}} followers </p>
+      
+    </div>
+  </div>
+</div>
+{% endblock %}
